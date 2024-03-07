@@ -8,8 +8,11 @@
 		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-		<bean class="com.springcore.constructor.Certi" name="certi" c:name="Java Programming"/>
-		<bean class="com.springcore.constructor.Person" name="person" c:name="Amit" c:personId="1234" c:certi-ref="certi"/>
+		<!--<bean class="com.springcore.constructor.Certi" name="certi" c:certName="Java Programming"/>
+		<bean class="com.springcore.constructor.Person" name="person" c:name="Amit" c:personId="1234" c:certi-ref="certi"/>-->
+	
+	<bean name="cer" class="com.springcore.constructor.Certi" c:cityName="Agra" c:population="1000"/>
+	<bean name="person" class="com.springcore.constructor.Person" c:certi-ref="cer"  c:name="Ram"/>
 	<!-- <bean class="com.springcore.constructor.Certi" name="cer">
 		<constructor-arg value="Java Programming"/>
 	</bean> -->

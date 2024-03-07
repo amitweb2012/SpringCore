@@ -11,6 +11,7 @@ public class Test {
 		context = new ClassPathXmlApplicationContext("com/springcore/constructor/configci.xml");
 		Person person = (Person) context.getBean("person");
 		System.out.println(person);
+		
 	}
 
 }

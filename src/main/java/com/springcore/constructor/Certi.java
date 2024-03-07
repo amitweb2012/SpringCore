@@ -1,10 +1,17 @@
 package com.springcore.constructor;
 
 public class Certi {
-  String name;
-
-	public Certi(String name) {
-		super();
-		this.name = name;
+	private String cityName;
+	private int population;
+	public Certi(String cityName, int population){
+		this.cityName = cityName;
+		this.population = population;
 	}
+	public String getCityName() {
+		return cityName;
+	}
+	public int getPopulation() {
+		return population;
+	}
+	
 }

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<context:annotation-config></context:annotation-config>
+	<bean name="address" class="com.springcore.auto.wire.annotation.Address">
+		<property name="street_name" value="Temp Address"/>
+		<property name="city" value="Kolkata"/>
+	</bean>
+	<bean name="emp1" class="com.springcore.auto.wire.annotation.Emp">
+		<property name="empName" value="Amit Das"></property>
+	</bean>
+</beans>

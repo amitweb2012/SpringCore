@@ -1,10 +1,14 @@
 # Created by https://www.gitignore.io/api/eclipse
 
+
 ### Eclipse ###
+**/META-INF/
+!.mvn/wrapper/maven-wrapper.jar
 
 .metadata
 bin/
 tmp/
+target/
 *.tmp
 *.bak
 *.swp
@@ -60,3 +64,6 @@ local.properties
 .classpath
 
 # End of https://www.gitignore.io/api/eclipse
+target/
+!target/
+target/site/*
