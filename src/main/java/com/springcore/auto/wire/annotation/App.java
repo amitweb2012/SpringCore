@@ -12,5 +12,4 @@ public class App {
 		Emp emp1 = context.getBean("emp1", Emp.class);
 		System.out.println(emp1);
 	}
-
 }
